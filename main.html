@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <title>Prisoner's Dilema Simulator</title>
+        <meta charset="UTF-8">
+        <meta name="author" content="rodrigopbraga">
+        <meta name="keywords" content="HTML, CSS, JavaScript, Dilema, Game, Morale">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="container-top">
+            <div class="container-title">
+                <h1>Prisoner's Dilema Simulator</h1>
+            </div>
+            <div class="display-toggle">
+                <button class="button" onclick="DisplayToggle()">◐</button>
+            </div>
+        </div>
+        <div class="container-main">
+            <div class="container-left">
+                <span>Round Count: <span id="valor"></span></span><br>
+                <input id="slider" class="slider" type="range" min="5" max="50" value="5"/>
+            </div>
+            <div class="container-center">
+                <div class="game">Player A X Player B<br>
+                    <button class="button" onclick="StartGame(Albert, Brocky)">Start</button>
+                    <div class="game-round">
+                        <p id="roundA">A </p>
+                        <br>
+                        <p id="roundB">B </p>
+                    </div>
+                </div>
+            </div>
+            <div class="container-right">
+                Stats<br>
+                <p id="stats-bar"></p>
+            </div>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
